@@ -1,0 +1,14 @@
+$darkBlack: #252525;
+$whiteContrast: #fff4f4;
+$tomatoContrast: #ff694f;
+
+%flexBox{
+   display: flex;
+   justify-content: space-between;
+
+}
+@mixin flexSpace($justifyValue,$width) {
+   display: flex;
+   justify-content: $justifyValue;
+   width: $width;
+}

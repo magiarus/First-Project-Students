@@ -1,0 +1,33 @@
+@import "./constants.scss";
+@import "./normalize.scss";
+ 
+ 
+ .header{
+    max-width: 100%;
+    background: $darkBlack;
+    color: $whiteContrast;
+ 
+ .nav {
+    margin: 0 auto;
+    @include flexSpace(space-between,87% );
+    padding: {
+        top: 20px;
+        bottom: 20px
+    };
+    &_navbar{
+        @include flexSpace(space-between,60% );
+
+    li{
+        a{
+                    color: $whiteContrast;
+                     transition: 0.3s all linear;
+
+                     &:hover{
+                     color: $tomatoContrast;
+                   }
+                }
+            }
+        }
+    }
+}
+@import "./container.scss"
